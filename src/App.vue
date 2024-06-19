@@ -1,10 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBarUsers />
   <router-view/>
+  <FooterUser />
 </template>
+
+<script>
+import FooterUser from './components/FooterUser.vue';
+import NavBarUsers from './components/NavBarUsers.vue';
+
+export default{
+  name: "App",
+  components: {
+    NavBarUsers,
+    FooterUser
+  }
+}
+
+</script>
 
 <style lang="scss">
 #app {
